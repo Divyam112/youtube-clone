@@ -1,0 +1,85 @@
+
+.class_body{
+    padding: 74px 24px 0px 88px;
+    background-color:rgb(250, 250, 250);
+    font-family: Roboto,Arial; 
+}
+
+.div_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+}
+
+@media(max-width: 750px) {
+    .div_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width: 751px) and  (max-width:999px) {
+    .div_grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(min-width: 1000px) {
+    .div_grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+.div_thumbnail{
+    width: 100%;
+    position:relative;
+}
+.div_thumbnail_time{
+    position:absolute;
+    bottom: 8px;
+    right:3px;
+    background-color: black;
+    color: white;
+    padding: 4px;
+    font-size: 12px;
+}
+.thumb_img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.div_profile_del{
+    display: grid;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    grid-template-columns: 48px 1fr;
+    column-gap: 10px;
+}
+
+.profile_img{
+    width: 36px;
+    object-fit: cover;
+    border-radius: 30px;   
+}
+p{
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+}
+.para_det{
+    font-weight: 700;
+    font-size: 14px;   
+    
+}
+.para_chan_name
+{
+    margin-top: 8px;
+    margin-bottom: 0px;
+    color: #606060  
+}
+.para_chan_view{
+    margin-top: 0px;
+    margin-bottom: 8px;
+    color: #606060
+}
+
